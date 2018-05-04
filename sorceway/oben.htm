@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML>
+
+<HEAD>
+    <STYLE>
+        html,
+        body {
+            height: 100%;
+        }
+
+        h1.headline {
+            position: relative;
+            animation-name: headline;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+
+        @keyframes headline {
+            0% {
+                left: 0px;
+                font-size: 25px;
+                color: orange;
+            }
+            100% {
+                left: 500px;
+                font-size: 35px;
+                color: blue;
+            }
+        }
+
+        .blink {
+            animation: blink 1s steps(5, start) infinite;
+        }
+
+        @keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        .gewonnen {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            width: 400px;
+            margin-left: -200px;
+            padding: 15px 30px;
+            background: #fff;
+            border: 5px dashed red;
+            animation: win 5s infinite ease, showAfter 1s forwards;
+
+            visibility: hidden;
+        }
+
+        .gewonnen a {
+            color: orange;
+        }
+
+        @keyframes win {
+            0% {
+                transform: scale(1.0) rotate(-1deg);
+                background: blue;
+                color: yellow;
+            }
+            25% {
+                transform: scale(1.25) rotate(1deg);
+            }
+            50% {
+                transform: scale(1.25) rotate(-1deg);
+                background: white;
+                color: red;
+            }
+            75% {
+                transform: scale(1.0) rotate(1deg);
+            }
+            100% {
+                transform: scale(1.0) rotate(-1deg);
+                background: blue;
+                color: yellow;
+            }
+        }
+        @keyframes showAfter {
+            99% {
+                visibility: hidden;
+            }
+            100% {
+                visibility: visible;
+            }
+        }
+
+    </STYLE>
+    <LINK REL='STYLESHEET' HREF='index_style.css' />
+</HEAD>
+
+<BODY>
+    <p>Herzlich willkommen, Cyberspacereisender, bei
+    <H1 CLASS="headline">
+        SORCEway.de </H1>
+    <DIV CLASS="gewonnen">
+        Herzlichen GlÃ¼ckwunsch! Sie sind der <B>1000000.</B> Besucher dieser Webseite. Klicken Sie <A HREF="http://gewinnspiel.">HIER</A>, um Ihren Gewinn von <B>10000</B>â‚¬ zu erhalten.
+    </DIV>
+	<FONT COLOR="RED">X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*</FONT>
+    </DIV>
+    <SCRIPT SRC="hintergrund_paprika.js"></SCRIPT>
+    <SCRIPT>
+        P_A_P_R_I_K_A(100);
+    </SCRIPT>
+    <NOSCRIPT>
+        <STYLE>
+            body {
+                background-image: url("paprika_der_freiheit .png");
+            }
+        </STYLE>
+    </NOSCRIPT>
+</BODY>
+
+</HTML>
